@@ -77,7 +77,7 @@ var DESTRUCTIVE_INDEX = 3;
 var CANCEL_INDEX = 4;
 
 ActionSheet.showActionSheetWithOptions({
-  options: (Platform.os == 'iOS') ? BUTTONSiOS : BUTTONSandroid,
+  options: (Platform.os == 'ios') ? BUTTONSiOS : BUTTONSandroid,
   cancelButtonIndex: CANCEL_INDEX,
   destructiveButtonIndex: DESTRUCTIVE_INDEX,
   tintColor: 'blue'
