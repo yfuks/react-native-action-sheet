@@ -83,7 +83,7 @@ ActionSheet.showActionSheetWithOptions({
   tintColor: 'blue'
 },
 (buttonIndex) => {
-  console.log('button clicked :', BUTTONS[buttonIndex]);
+  console.log('button clicked :', buttonIndex);
 });
 ```
 
