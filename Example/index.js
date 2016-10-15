@@ -47,7 +47,8 @@ export default class Example extends Component {
     ActionSheet.showActionSheetWithOptions({
       options: BUTTONS,
       cancelButtonIndex: CANCEL_INDEX,
-      destructiveButtonIndex: DESTRUCTIVE_INDEX
+      destructiveButtonIndex: DESTRUCTIVE_INDEX,
+      tintColor: 'blue'
     },
     (buttonIndex) => {
       this.setState({ clicked: BUTTONS[buttonIndex] });
