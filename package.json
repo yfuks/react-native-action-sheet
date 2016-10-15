@@ -1,8 +1,9 @@
 {
-  "name": "react-native-action-sheet",
+  "name": "@yfuks/react-native-action-sheet",
   "description": "React native action sheet with native android",
   "version": "0.0.1",
   "main": "index.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/yfuks/react-native-action-sheet.git"
@@ -18,6 +19,9 @@
     "action",
     "sheet"
   ],
+  "bugs": {
+    "url": "https://github.com/yfuks/react-native-action-sheet/issues"
+  },
   "scripts": {
     "prepublish": "rm -rf android/build Example/android/build Example/android/app/build"
   }
