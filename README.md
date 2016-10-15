@@ -56,7 +56,7 @@ public class MainApplication extends Application implements ReactApplication {
 ## Usage
 
 ```javascript
-import ActionSheet from 'react-native-action-sheet';
+import ActionSheet from '@yfuks/react-native-action-sheet';
 import { Platform } from 'react-native';
 
 var BUTTONSiOS = [
