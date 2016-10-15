@@ -1,4 +1,4 @@
-# react-native-action-sheet ![MIT](https://img.shields.io/dub/l/vibe-d.svg) ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg)
+# react-native-action-sheet [![npm version](https://badge.fury.io/js/%40yfuks%2Freact-native-action-sheet.svg)](https://badge.fury.io/js/%40yfuks%2Freact-native-action-sheet) ![MIT](https://img.shields.io/dub/l/vibe-d.svg) ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg)
 React native action sheet with native android (using the built-in [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html))
 
 This module simply return the [ActionSheetIOS](https://facebook.github.io/react-native/docs/actionsheetios.html) if the device on iOS
