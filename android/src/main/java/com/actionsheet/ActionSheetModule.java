@@ -1,14 +1,10 @@
 package com.actionsheet;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
-import android.net.Uri;
 import android.util.Log;
 import android.widget.ArrayAdapter;
-import android.content.pm.PackageManager;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
