@@ -43,11 +43,17 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
 
     final List<String> titles = new ArrayList<String>();
 
+    int cancelIndex = -1;
+    if (options.hasKey("cancelButtonIndex")) {
+      cancelIndex = options.getInt("cancelButtonIndex");
+    }
     if (options.hasKey("options")) {
       ReadableArray customButtons = options.getArray("options");
       for (int i = 0; i < customButtons.size(); i++) {
         int currentIndex = titles.size();
-        titles.add(currentIndex, customButtons.getString(i));
+        if (i != cancelIndex) {
+          titles.add(currentIndex, customButtons.getString(i));
+        }
       }
     }
 
