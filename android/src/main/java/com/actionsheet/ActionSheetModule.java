@@ -43,7 +43,7 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
 
     final List<String> titles = new ArrayList<String>();
 
-    int _cancelInde = -1;
+    int _cancelInde = 99;
     if (options.hasKey("cancelButtonIndex")) {
       _cancelInde = options.getInt("cancelButtonIndex");
     }
