@@ -22,7 +22,7 @@ iOS | Android
 ...
 
 include ':react-native-action-sheet'
-project(':react-native-action-sheet').projectDir = new File(settingsDir, '../node_modules/react-native-action-sheet/android')
+project(':react-native-action-sheet').projectDir = new File(settingsDir, '../node_modules/@yfuks/react-native-action-sheet/android')
 ```
 ```gradle
 // file: android/app/build.gradle
