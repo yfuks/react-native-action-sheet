@@ -15,8 +15,12 @@ iOS | Android
 ## Install
 
 `npm install @yfuks/react-native-action-sheet@latest --save`
+`react-native link @yfuks/react-native-action-sheet`
 
 #### Android
+
+The `react-native link` command above should do everything you need, but if for some reason it does not work, you can replicate its effects manually by making the following changes.
+
 ```gradle
 // file: android/settings.gradle
 ...
