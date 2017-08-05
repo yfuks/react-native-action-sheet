@@ -17,6 +17,10 @@ iOS | Android
 `npm install @yfuks/react-native-action-sheet@latest --save`
 `react-native link @yfuks/react-native-action-sheet`
 
+## if react native < 0.47
+
+> yarn add @yfuks/react-native-action-sheet@0.0.3
+
 #### Android
 
 The `react-native link` command above should do everything you need, but if for some reason it does not work, you can replicate its effects manually by making the following changes.
