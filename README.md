@@ -19,7 +19,8 @@ iOS | Android
 
 ## if react native < 0.47
 
-> yarn add @yfuks/react-native-action-sheet@0.0.3
+`npm install @yfuks/react-native-action-sheet@0.0.3 --save`
+`react-native link @yfuks/react-native-action-sheet`
 
 #### Android
 
