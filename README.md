@@ -64,7 +64,7 @@ public class MainApplication extends Application implements ReactApplication {
 
 #### (Optional) Style customization
 
-You can change the style of the dialog by editing `nodes_modules/@yfuks/react-native-action-sheet/android/app/res/values/style.xml`
+You can change the style of the dialog by editing `nodes_modules/@yfuks/react-native-action-sheet/android/src/main/res/values/style.xml`
 
 ## Usage
 
