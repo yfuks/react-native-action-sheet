@@ -52,11 +52,17 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
     }
 
     ArrayAdapter<String> adapter = new ArrayAdapter<String>(currentActivity,
-            android.R.layout.select_dialog_item, titles);
-    AlertDialog.Builder builder = new AlertDialog.Builder(currentActivity);
+            R.layout.dialog_item, titles);
+    AlertDialog.Builder builder = new AlertDialog.Builder(currentActivity, R.style.DialogStyle);
     if (options.hasKey("title") && options.getString("title") != null && !options.getString("title").isEmpty()) {
       builder.setTitle(options.getString("title"));
     }
+
+    /* @TODO message currently disable the options
+    if (options.hasKey("message") && options.getString("message") != null && !options.getString("message").isEmpty()) {
+      builder.setMessage(options.getString("message"));
+    }
+    */
 
     builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
       public void onClick(DialogInterface dialog, int index) {

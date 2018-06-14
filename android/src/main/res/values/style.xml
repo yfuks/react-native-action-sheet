@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- note: #80000000 = transparent -->
+
+  <!-- Theme for list items -->
+  <style name="DialogListItemStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+
+      <!--
+        textStyle possible values:
+        - normal
+        - normal|bold
+        - normal|italic
+        - bold
+        - bold|italic
+      -->
+      <item name="android:textStyle">normal</item>
+      <item name="android:textColor">#000000</item>
+      <item name="android:textSize">20dp</item>
+      <item name="android:paddingTop">15dp</item>
+      <item name="android:paddingBottom">15dp</item>
+      <item name="android:paddingLeft">20dp</item>
+      <item name="android:paddingRight">20dp</item>
+
+      <!-- note: https://developer.android.com/reference/android/view/Gravity -->
+      <item name="android:gravity">center_vertical</item>
+
+      <!-- note: https://developer.android.com/reference/android/widget/TextView#attr_android:ellipsize -->
+      <item name="android:ellipsize">marquee</item>
+  </style>
+
+  <!-- Theme for the title -->
+  <style name="DialogTitleStyle">
+    <item name="android:textColor">#000000</item>
+    <item name="android:textSize">25dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center_vertical</item>
+  </style>
+
+  <!-- General theme for the dialog -->
+  <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+    <!-- style written above -->
+    <item name="android:windowTitleStyle">@style/DialogTitleStyle</item>
+
+    <item name="android:textColorPrimary">#FF0000</item>
+    <item name="android:background">#FFFFFF</item>
+  </style>
+</resources>
