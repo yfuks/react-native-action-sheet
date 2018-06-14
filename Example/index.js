@@ -48,7 +48,8 @@ export default class Example extends Component {
       options: BUTTONS,
       cancelButtonIndex: CANCEL_INDEX,
       destructiveButtonIndex: DESTRUCTIVE_INDEX,
-      tintColor: 'blue'
+      tintColor: 'blue',
+      title: 'TITLE',
     },
     (buttonIndex) => {
       this.setState({ clicked: BUTTONS[buttonIndex] });
