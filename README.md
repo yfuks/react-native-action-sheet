@@ -22,7 +22,7 @@ iOS | Android
 `npm install @yfuks/react-native-action-sheet@0.0.3 --save`
 `react-native link @yfuks/react-native-action-sheet`
 
-#### Android
+### Android
 
 The `react-native link` command above should do everything you need, but if for some reason it does not work, you can replicate its effects manually by making the following changes.
 
@@ -61,6 +61,10 @@ public class MainApplication extends Application implements ReactApplication {
 }
 
 ```
+
+#### (Optional) Style customization
+
+You can change the style of the dialog by editing `nodes_modules/@yfuks/react-native-action-sheet/android/app/res/values/style.xml`
 
 ## Usage
 
