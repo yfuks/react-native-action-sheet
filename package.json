@@ -1,7 +1,7 @@
 {
-  "name": "@yfuks/react-native-action-sheet",
+  "name": "react-native-action-sheet",
   "description": "React native action sheet with native android",
-  "version": "0.0.4",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
