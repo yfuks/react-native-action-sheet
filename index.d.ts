@@ -1,4 +1,4 @@
-declare module '@yfuks/react-native-action-sheet' {
+declare module 'react-native-action-sheet' {
   import { ActionSheetIOSStatic } from 'react-native'
 
   const ActionSheetIOS: ActionSheetIOSStatic
