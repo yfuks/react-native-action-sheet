@@ -43,11 +43,18 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
 
     final List<String> titles = new ArrayList<String>();
 
+    int _cancelInde = 99;
+    if (options.hasKey("cancelButtonIndex")) {
+      _cancelInde = options.getInt("cancelButtonIndex");
+    }
+    final int cancelIndex = _cancelInde;
     if (options.hasKey("options")) {
       ReadableArray customButtons = options.getArray("options");
       for (int i = 0; i < customButtons.size(); i++) {
         int currentIndex = titles.size();
-        titles.add(currentIndex, customButtons.getString(i));
+        if (i != cancelIndex) {
+          titles.add(currentIndex, customButtons.getString(i));
+        }
       }
     }
 
@@ -66,7 +73,11 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
 
     builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
       public void onClick(DialogInterface dialog, int index) {
-        callback.invoke(index);
+        if (index < cancelIndex) {
+          callback.invoke(index);
+        } else {
+          callback.invoke(index + 1);
+        }
       }
     });
 
@@ -79,7 +90,6 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
       @Override
       public void onCancel(DialogInterface dialog) {
         dialog.dismiss();
-        callback.invoke();
       }
     });
     dialog.show();
