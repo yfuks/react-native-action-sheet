@@ -121,7 +121,7 @@ static showActionSheetWithOptions(options, callback);
 option | iOS  | Android | Info
 ------ | ---- | ------- | ----
 options | OK | OK | (array of strings) - a list of button titles (required on iOS)
-cancelButtonIndex | OK | - | (int) - index of cancel button in options (useless in android since we have back button)
+cancelButtonIndex | OK | Ok | (int) - index of cancel button in options
 destructiveButtonIndex | OK | - | (int) - index of destructive button in options (same as above)
 title | OK | OK | (string) - a title to show above the action sheet
 message | OK | - | (string) - a message to show below the title
