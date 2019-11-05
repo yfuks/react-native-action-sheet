@@ -71,9 +71,8 @@ You can change the style of the dialog by editing `nodes_modules/react-native-ac
 
 ```javascript
 import ActionSheet from 'react-native-action-sheet';
-import { Platform } from 'react-native';
 
-var BUTTONSiOS = [
+var options = [
   'Option 0',
   'Option 1',
   'Option 2',
@@ -81,17 +80,11 @@ var BUTTONSiOS = [
   'Cancel'
 ];
 
-var BUTTONSandroid = [
-  'Option 0',
-  'Option 1',
-  'Option 2'
-];
-
 var DESTRUCTIVE_INDEX = 3;
 var CANCEL_INDEX = 4;
 
 ActionSheet.showActionSheetWithOptions({
-  options: (Platform.OS == 'ios') ? BUTTONSiOS : BUTTONSandroid,
+  options: options,
   cancelButtonIndex: CANCEL_INDEX,
   destructiveButtonIndex: DESTRUCTIVE_INDEX,
   tintColor: 'blue'
