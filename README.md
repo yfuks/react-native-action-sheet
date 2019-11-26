@@ -107,7 +107,7 @@ For the iOS implementation see [ActionSheetIOS](https://facebook.github.io/react
 static showActionSheetWithOptions(options, callback);
 ```
 
-@note: on Android in case of a touch outside the ActionSheet or the button *back* is pressed the buttonIndex value is ```'undefined'```
+@note: on Android in case of a touch outside the ActionSheet or the hardware back button is pressed, the buttonIndex value is `cancelButtonIndex` or ```'undefined'```
 
 #### options
 
