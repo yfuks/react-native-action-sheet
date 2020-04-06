@@ -78,8 +78,14 @@ public class ActionSheetModule extends ReactContextBaseJavaModule {
     dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
       @Override
       public void onCancel(DialogInterface dialog) {
+        Integer index = null;
+
+        if (options.hasKey("cancelButtonIndex")) {
+          index = options.getInt("cancelButtonIndex");
+        }
+
         dialog.dismiss();
-        callback.invoke();
+        callback.invoke(index);
       }
     });
     dialog.show();

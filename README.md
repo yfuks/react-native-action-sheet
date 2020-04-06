@@ -71,9 +71,8 @@ You can change the style of the dialog by editing `nodes_modules/react-native-ac
 
 ```javascript
 import ActionSheet from 'react-native-action-sheet';
-import { Platform } from 'react-native';
 
-var BUTTONSiOS = [
+var options = [
   'Option 0',
   'Option 1',
   'Option 2',
@@ -81,17 +80,11 @@ var BUTTONSiOS = [
   'Cancel'
 ];
 
-var BUTTONSandroid = [
-  'Option 0',
-  'Option 1',
-  'Option 2'
-];
-
 var DESTRUCTIVE_INDEX = 3;
 var CANCEL_INDEX = 4;
 
 ActionSheet.showActionSheetWithOptions({
-  options: (Platform.OS == 'ios') ? BUTTONSiOS : BUTTONSandroid,
+  options: options,
   cancelButtonIndex: CANCEL_INDEX,
   destructiveButtonIndex: DESTRUCTIVE_INDEX,
   tintColor: 'blue'
@@ -114,14 +107,14 @@ For the iOS implementation see [ActionSheetIOS](https://facebook.github.io/react
 static showActionSheetWithOptions(options, callback);
 ```
 
-@note: on Android in case of a touch outside the ActionSheet or the button *back* is pressed the buttonIndex value is ```'undefined'```
+@note: on Android in case of a touch outside the ActionSheet or the hardware back button is pressed the buttonIndex value is `cancelButtonIndex` or ```'undefined'```
 
 #### options
 
 option | iOS  | Android | Info
 ------ | ---- | ------- | ----
 options | OK | OK | (array of strings) - a list of button titles (required on iOS)
-cancelButtonIndex | OK | - | (int) - index of cancel button in options (useless in android since we have back button)
+cancelButtonIndex | OK | Ok | (int) - index of cancel button in options
 destructiveButtonIndex | OK | - | (int) - index of destructive button in options (same as above)
 title | OK | OK | (string) - a title to show above the action sheet
 message | OK | - | (string) - a message to show below the title
